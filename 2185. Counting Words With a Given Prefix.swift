@@ -1,8 +1,9 @@
 /**
  * Counts the number of strings in an array that contain a given prefix.
  * 
- * The function iterates through an array of strings `words` and checks if each string starts with a given prefix `pref`.
- * A prefix is defined as any leading contiguous substring of a string.
+ * You are given an array of strings words and a string pref.
+ * Return the number of strings in words that contain pref as a prefix.
+ * A prefix of a string s is any leading contiguous substring of s.
  * 
  * - Example 1:
  *   Input: words = ["pay", "attention", "practice", "attend"], pref = "at"
