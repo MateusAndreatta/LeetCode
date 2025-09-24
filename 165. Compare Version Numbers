@@ -1,0 +1,18 @@
+class Solution {
+    func compareVersion(_ version1: String, _ version2: String) -> Int {
+        var stack1 = version1.split(separator: ".")
+        var stack2 = version2.split(separator: ".")
+        while !stack1.isEmpty || !stack2.isEmpty {
+            let v1 = stack1.isEmpty ? 0 : Int(stack1.removeFirst()) ?? 0
+            let v2 = stack2.isEmpty ? 0 : Int(stack2.removeFirst()) ?? 0
+
+            if v1 > v2 {
+                return 1
+            }
+            if v1 < v2 {
+                return -1
+            }
+        }
+        return 0
+    }
+}
